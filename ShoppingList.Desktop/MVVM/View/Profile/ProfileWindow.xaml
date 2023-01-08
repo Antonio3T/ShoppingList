@@ -1,0 +1,229 @@
+﻿<Window x:Class="ShoppingList.Desktop.MVVM.View.Profile.ProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="300" Width="200"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Top="200"
+        Left="920"
+        WindowStartupLocation="Manual">
+    <!--WindowStartupLocation="CenterScreen">-->
+
+    <Border Background="#272537"
+            CornerRadius="20">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="1">
+                <Button x:Name="ButtonSignIn"
+                    Content="Sign In"
+                    Height="50"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    FontSize="14"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,50,0"
+                    FontFamily="/Fonts/#Poppins" Click="ButtonSignIn_Click">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Poppins"/>
+                            <Setter Property="Background" Value="#FE6584"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF4C70"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="21"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <Button x:Name="ButtonSignUp"
+                    Content="Sign Up"
+                    Height="50"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    FontSize="14"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,50,0"
+                    FontFamily="/Fonts/#Poppins" Click="ButtonSignUp_Click">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Poppins"/>
+                            <Setter Property="Background" Value="#FE6584"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF4C70"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="21"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <!--<RadioButton Content="Edit"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>-->
+                <!--Command="{Binding DiscoveryViewCommand}"-->
+                <!--<RadioButton Content="Add List"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                --><!--Command="{Binding DiscoveryViewCommand}"--><!--
+                <RadioButton Content="Show Lists"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                --><!--Command="{Binding DiscoveryViewCommand}"--><!--
+                <RadioButton Content="Remove List"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                --><!--Command="{Binding DiscoveryViewCommand}"-->
+                <RadioButton Content="Refresh"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                <!--Command="{Binding DiscoveryViewCommand}"-->
+                <!--<RadioButton Content="Select List"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>-->
+                <!--Command="{Binding DiscoveryViewCommand}"-->
+                <!--<RadioButton Content="Edit Profile"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>-->
+                <!--Command="{Binding DiscoveryViewCommand}"-->
+
+                <Button x:Name="ButtonEditProfile"
+                    Content="Edit Profile"
+                    Height="50"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    FontSize="14"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,50,0"
+                    FontFamily="/Fonts/#Poppins" Click="ButtonEditProfile_Click">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Poppins"/>
+                            <Setter Property="Background" Value="#FE6584"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF4C70"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="21"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                
+            </StackPanel>
+
+            <Button x:Name="ButtonClose"
+                    Content="+"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Width="40"
+                    Height="40" 
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,0"
+                    FontFamily="/Fonts/#Poppins" Click="ButtonClose_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="Fonts/#Poppins"/>
+                        <Setter Property="Background" Value="#FE6584"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF4C70"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="21" Height="21"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            
+        </Grid>
+    </Border>
+
+</Window>
