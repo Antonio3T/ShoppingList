@@ -1,27 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ListData>
 	<Categories>
-		<Category name="Padaria" predefined="true"/>
-		<Category name="Bazar" predefined="true"/>
-		<Category name="Ferragens" predefined="true"/>
-		<Category name="Mercearia" predefined="true"/>
-		<Category name="Frios e Laticínios" predefined="true"/>
-		<Category name="Limpeza" predefined="true"/>
-		<Category name="Bricolage" predefined="true"/>
-		<Category name="Automóveis" predefined="true"/>
+		<Category name="Fresh Produce" predefined="true"/>
+		<Category name="Dairy" predefined="true"/>
+		<Category name="Meat and Fish" predefined="true"/>
 	</Categories>
 	<Lists>
-		<List name="Auchan">
-			<Item name="Pera Rocha" quantity="1k" category="" bought="false"/>
-			<Item name="Pão da casa" quantity="6" category="Padaria" bought="false"/>
-			<Item name="Copos de água (20cl)" quantity="12" category="Bazar" bought="false"/>
-			<Item name="Pão da casa" quantity="6" category="Padaria" bought="false"/>
-			<Item name="Cola Tudo" quantity="1" category="Ferragens" bought="false"/>
-			<Item name="Broa de Milho" quantity="1/2" category="Padaria" bought="false"/>
+		<List name="Fresh Produce">
+			<Item name="Apples" quantity="11k" category="" bought="false"/>
+			<Item name="Oranges" quantity="20" category="Fruit" bought="false"/>
+			<Item name="Bananas" quantity="17" category="Fruit" bought="false"/>
 		</List>
-		<List name="LIDL">
-			<Item name="Alface" quantity="1" category="" bought="true"/>
-			<Item name="Bananas" quantity="4" category="" bought="false"/>
+		<List name="Dairy">
+			<Item name="Milk" quantity="20" category="" bought="true"/>
+			<Item name="Eggs" quantity="17" category="" bought="false"/>
 		</List>
 	</Lists>
 </ListData>
